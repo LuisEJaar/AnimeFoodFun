@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.overall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.television {
+  overflow: visible;
+  height:700px;
+  padding:1%;
+  margin:0;
+}
+
+.content {
+  position: relative;
+  z-index: -2;
+  left: 100px;
+  top: -550px;
+  height: 360px;
+  width: 640px;
+  background-image: url("../img/static.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition-property: background-image;
+  transition-timing-function: linear;
+}
+
+.tvBars {
+  z-index: -3;
+  position: relative;
+  left: 100px;
+  top: -1000px;
+  background-color: black;
+  height: 550px;
+  width: 640px;
+}
+
+.buttons, h2 {
+  margin-top: 10px;
+}
+
+
+

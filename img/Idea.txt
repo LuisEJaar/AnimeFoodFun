@@ -1,0 +1,14 @@
+-Downloads some anime food gifs
+-Download the proper tv images
+	Edited one
+
+
+Challenges:
+
+Cutting the image so that there's a blank screen or the gifs cover the screen
+ when we hit on
+
+
+Upgrade idea: 
+Figure out how to make the gifs appear in the TV when you dial 
+the knobs to the different anime. 
