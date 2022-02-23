@@ -7,20 +7,24 @@ knob.onclick = knobControl
 let rotation = 0;
 
 function knobControl () {
-  rotation = rotation + 60
+  let increment = 51
+  rotation = rotation + increment
+  console.log(rotation);
   console.log("its knobberin time")
   knob.style.transform = `rotate(${rotation}deg)`
-  if (rotation === 60) {
+  if (rotation === increment) {
     meat()
-  } else if (rotation === 120){
+  } else if (rotation === increment*2){
     pancake()
-  } else if (rotation === 180){
-    pancake()
-  } else if (rotation === 240){
-    pancake()
-  } else if (rotation === 300){
-    pancake() 
-  } else {
+  } else if (rotation === increment*3){
+    ramen()
+  } else if (rotation === increment*4){
+    ooze()
+  } else if (rotation === increment*5){
+    omurice() 
+  } else if (rotation === increment*6){
+    omlette() 
+  } else if (rotation === increment*7){
     off()
     rotation = 0
   }

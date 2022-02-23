@@ -49,40 +49,58 @@ h1 {
 
 h2 {
   margin-top: 50px;
+  font-size: 60px;
 }
 
-.buttons {
-  margin-top: 10px;
-  width: 100%;
-  padding-left: 10%;
-}
-
-button {
-  width: 15%;
-  height: 30px;
-  font-size: large;
+span {
+  font-size: 40px;
 }
 
 #knob {
   position: relative;
-  left: 793px;
-  top: -1110px;
+  left: 794px;
+  top: -1111px;
 }
 
 @media screen and (max-width:1000px) {
-  .buttons {
-    width: 90%;
-    padding-left: 0;
-  }
-
-  button {
-    float: left;
-    width: 25%;
-    height: 80px;
-  }
-
-  .buttonBottom {
-    margin-left: 25%;
-  }
+  
 }
 
+@media screen and (orientation:landscape) {
+   .television > img {
+     height: 350px;
+   }
+
+   .television {
+     padding: 0;
+   }
+
+   .tvBars {
+    left: 50px;
+    top: -550px;
+    height: 280px;
+    width: 400px;
+  }
+
+  .content {
+    left: 50px;
+    top: -300px;
+    height: 200px;
+    width: 350px;
+  }
+
+  #knob {
+    left: 430px;
+    top: -592px;
+    height: 35px;
+  }
+
+  h2 {
+    margin-top: -28%;
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 28px;
+  }
+}
