@@ -1,12 +1,29 @@
-document.getElementById('meat').onclick = meat
-document.getElementById('pancake').onclick = pancake
-document.getElementById('ramen').onclick = ramen
-document.getElementById('ooze').onclick = ooze
-document.getElementById('omurice').onclick = omurice
-document.getElementById('omlette').onclick = omlette
 const content = document.querySelector(".content")
-
 const  tvOn = document.querySelector('.tvStatus')
+
+const knob = document.getElementById("knob")
+knob.onclick = knobControl
+
+let rotation = 0;
+
+function knobControl () {
+  rotation = rotation + 60
+  console.log("its knobberin time")
+  knob.style.transform = `rotate(${rotation}deg)`
+  if (rotation === 60) {
+    meat()
+  } else if (rotation === 120){
+    pancake()
+  } else if (rotation === 180){
+    pancake()
+  } else if (rotation === 240){
+    pancake()
+  } else if (rotation === 300){
+    pancake() 
+  } else {
+
+  }
+}
 
 function common () {
   tvOn.src = "./img/Old-Tube-Vector-Tv-EmptyScreen.png"

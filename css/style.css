@@ -63,6 +63,12 @@ button {
   font-size: large;
 }
 
+#knob {
+  position: relative;
+  left: 793px;
+  top: -1110px;
+}
+
 @media screen and (max-width:1000px) {
   .buttons {
     width: 90%;
