@@ -47,13 +47,26 @@ h1 {
   width: 640px;
 }
 
-.buttons, h2 {
+h2 {
+  margin-top: 50px;
+}
+
+.buttons {
   margin-top: 10px;
+  width: 100%;
+  padding-left: 10%;
+}
+
+button {
+  width: 15%;
+  height: 30px;
+  font-size: large;
 }
 
 @media screen and (max-width:1000px) {
   .buttons {
     width: 90%;
+    padding-left: 0;
   }
 
   button {
