@@ -21,7 +21,8 @@ function knobControl () {
   } else if (rotation === 300){
     pancake() 
   } else {
-
+    off()
+    rotation = 0
   }
 }
 
@@ -58,4 +59,8 @@ function omurice() {
 function omlette () {
   common()
   setTimeout(() => {content.style.backgroundImage = "url(./img/Omlette.gif)" }, 600);
+}
+
+function off () {
+  tvOn.src = "./img/Old-Tube-Vector-Tv-4684771.png"
 }
