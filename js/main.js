@@ -3,6 +3,7 @@ document.getElementById('pancake').onclick = pancake
 document.getElementById('ramen').onclick = ramen
 document.getElementById('ooze').onclick = ooze
 document.getElementById('omurice').onclick = omurice
+document.getElementById('omlette').onclick = omlette
 const content = document.querySelector(".content")
 
 const  tvOn = document.querySelector('.tvStatus')
@@ -35,4 +36,9 @@ function ooze () {
 function omurice() {
   common()
   setTimeout(() => {content.style.backgroundImage = "url(./img/Omurice.gif)" }, 600);
+}
+
+function omlette () {
+  common()
+  setTimeout(() => {content.style.backgroundImage = "url(./img/Omlette.gif)" }, 600);
 }
